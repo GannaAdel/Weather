@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ec7602c3ca.js" crossorigin="anonymous"></script>
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/mediaScreen.css">
+</head>
+
+<body>
+    <nav class="navbar  navbar-expand-lg top-0 z-1 ">
+        <div class="container p-3 ">
+            <a class="navbar-brand d-flex align-items-center " href="#">
+                <img src="./images/logo.png" class=" pe-3 object-fit-contain" alt="">
+                <div class="h-25 logo-fully">
+                    <h6 class="m-0 mt-3">Weather</h6>
+                    <p class="logo ">tagline goes here</p>
+                </div>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item  ">
+                        <a class="nav-link  px-3 py-1 active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item ps-4 ">
+                        <a class="nav-link  px-3 py-1" href="#">News</a>
+                    </li>
+                    <li class="nav-item ps-4 ">
+                        <a class="nav-link  px-3 py-1" href="#">Live cameras</a>
+                    </li>
+                    <li class="nav-item ps-4 ">
+                        <a class="nav-link  px-3 py-1" href="#">Photos</a>
+                    </li>
+                    <li class="nav-item ps-4 ">
+                        <a class="nav-link  px-3 py-1" href="#">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="home pt-3">
+        <div class="container  div mt-3  text-center pt-2 px-5">
+            <div class="input-group mb-3 mt-5 ">
+                <input id="search" type="text" class="w-75  rounded-start-pill p-3 border-0 "
+                    placeholder="Find your location.." aria-describedby="button">
+                <button class="btn rounded-end-pill px-5 text-white" type="button" id="button">Find</button>
+            </div>
+        
+            <div class="row row-cols-lg-3 d-flex mt-5 py-2" id="rowData">
+
+            </div>
+        </div>
+        <footer class="py-4">
+            <div class="container">
+                <div class="part1 d-flex align-items-center  ">
+                    <div class="input-group mb-3 mt-5 ">
+                        <input type="text" class="w-75 rounded-start-pill p-3 border-0 "
+                            placeholder="Enter your Email to subscribe" aria-describedby="button-add">
+                        <button class="btn rounded-end-pill px-5 text-white" type="button"
+                            id="button-add">Subscribe</button>
+                    </div>
+                    <div class="list mt-5 d-flex gap-3 ">
+                        <a href="www.facebook.com" class="text-decoration-none  ">
+                            <div class="f-icon d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-facebook-f"></i>
+                            </div>
+                        </a>
+                        <a href="www.twitter.com" class="text-decoration-none  ">
+                            <div class="f-icon d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="www.googleplus.com" class="text-decoration-none  ">
+                            <div class="f-icon d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-google-plus-g"></i>
+                            </div>
+                        </a>
+                        <a href="www.pinterest.com" class="text-decoration-none  ">
+                            <div class="f-icon d-flex justify-content-center align-items-center rounded-circle">
+                                <i class="fa-brands fa-pinterest-p"></i>
+                            </div>
+                        </a>
+
+                    </div>
+
+                </div>
+                <p class="ms-3 text-white-50 my-2 text">Copyright 2014 Company name. Designed by Themezy. All rights
+                    reserved</p>
+            </div>
+
+        </footer>
+    </div>
+
+
+
+
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/weather.js"></script>
+</body>
+
+</html>

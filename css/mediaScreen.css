@@ -1,0 +1,9 @@
+@media screen and (max-width:991px){
+    .row{
+        flex-direction: column; 
+    }
+  .input-group{
+    flex-wrap: nowrap;
+    padding-right:20px ;
+  }
+}
