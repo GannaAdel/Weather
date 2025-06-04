@@ -24,20 +24,20 @@ button.addEventListener('click', function () {
     value()
 });
 
-function getLocationWeather() {
+async function getLocationWeather() {
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(async function (position) {
             let lat = position.coords.latitude;
             let lon = position.coords.longitude;
             let query = `${lat} , ${lon}`;
-            getWeather(query);
+          await  getWeather(query);
         }, function (error) {
             console.error("Geolocation Error: ", error.message);
             alert("Fail to reach your location");
         });
     }
 }
-
+getLocationWeather()
 async function getWeather(term) {
     let x = await fetch(`https://api.weatherapi.com/v1//forecast.json?key=3b3c0ecd8b2c47419d2154018251804&q=${term}&days=3`);
     if (x.ok == true) {
